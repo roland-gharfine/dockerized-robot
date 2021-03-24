@@ -108,5 +108,5 @@ to get started with open source contributions to their project.
 
 
 ## Feedback
-- After watching the course, if you have any feedback, I'd love to hear from
-you! Please make an issue on this repository, and I will get back to you. 
+- If you have any feedback, I'd love to hear from
+you! Please make an issue on this repository, and I will get back to you.
