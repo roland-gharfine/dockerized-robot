@@ -1,4 +1,4 @@
-# pytest_project
+# robot_project
 
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
@@ -10,8 +10,9 @@
 ## Prerequisites
 **Install Docker**
   - These tests have been packaged to run with all dependencies
-    installed within a Docker container. Due to the use of f-strings,
-    this must be run with python 3.6+. The Docker image is based on python 3.7
+    installed within a Docker container. The Docker image is based on python 3.7
+
+  - The tests make use of Robot Framework and its Selenium Library extension.
 
 
 ## Usage
@@ -27,22 +28,22 @@
 **This will open the docker shell and you can run one of the following commands:**
 
 
-  *Run the entire test suite*
+  *Run the entire test suite with the default options*
     
   ``` bash
-  $ pytest 
+  $ robot Tests 
   ```
 
-  *Run the tests for a certain file matching a keyword*
+  *Run the tests and save results in the Results directory*
     
   ``` bash
-  $ pytest -k <test_file_name>
+  $ robot -d Results Tests
   ```
 
-  *Run tests while printing all variables and verbose output*
+  *Run tests and save results in timestamped files*
 
   ``` bash
-  $ pytest -vvl
+  $ robot -d Results -T Tests
   ```
 
 **To exit the shell**
