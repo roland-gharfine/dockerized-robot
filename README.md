@@ -16,7 +16,14 @@
 
 
 ## Usage
-**To run open a shell**
+
+*To run without user intervention*
+
+
+
+
+
+*To run interactively*
 
   ```bash
 
