@@ -23,7 +23,6 @@ ENV DISPLAY :99
 
 
 RUN pip install --upgrade pip
-RUN pip install -e .
 RUN pip3 install -r /robot_project/test-requirements.txt
 
 WORKDIR /robot_project/
