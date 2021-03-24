@@ -2,8 +2,8 @@
 
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
-- [Debugging](#debugging)
-- [Additional Practice](#additional-practice)
+- [Documentation](#documentation)
+- [Additional Information](#additional-information)
 - [Feedback](#feedback) - Please create issues to provide feedback!
 
 
