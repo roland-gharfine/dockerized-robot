@@ -20,6 +20,16 @@
 *To run without user intervention*
 
 
+  ```bash
+
+  $ docker-compose build
+  $ docker-compose run test
+  ```
+
+
+- This will run the run-tests.sh script which in turn will do the work for you by starting the X server and then running the tests and saving the timestamped results
+in the Results directory.
+
 
 
 
@@ -38,6 +48,7 @@
   *Run the entire test suite with the default options*
     
   ``` bash
+  $ Xvfb :99 2>&1 &  # This will start the X server
   $ robot Tests 
   ```
 
