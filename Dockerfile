@@ -3,7 +3,6 @@ MAINTAINER Roland Gharfine
 
 RUN mkdir /robot_project/
 COPY ./test-requirements.txt /robot_project/
-COPY ./setup.py ./setup.py
 
 RUN apt-get update -y
 RUN apt-get install -y wget xvfb unzip
