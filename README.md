@@ -106,6 +106,8 @@ docmentation for the keywords used in the Page Object files.
    * `python  -m robot.libdoc  --format html  path\to\Resource_or_Library  path\to\output_file.html` 
 
 
+1. You can view a video of a successful test run under the Results folder. This is your baseline for what a successful test should look like.
+
 
 
 ## Additional Information
