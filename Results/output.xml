@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.7.8 on linux)" generated="20210323 09:55:09.236" rpa="false">
+<suite id="s1" name="Tests" source="/robot_project/Tests">
+<suite id="s1-s1" name="Task2" source="/robot_project/Tests/Task2.robot">
+<kw name="Start Suite" library="Common" type="setup">
+<doc>Launches the browser and navigates to the login page</doc>
+<kw name="Launch Browser" library="CommonWeb">
+<doc>Launches the browser, maximizes it and navigates to the login page</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210323 09:55:09.364" level="INFO">Opening browser 'chrome' to base url 'https://www.westwingnow.de'.</msg>
+<status status="PASS" starttime="20210323 09:55:09.363" endtime="20210323 09:55:13.481"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210323 09:55:13.482" endtime="20210323 09:55:13.626"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20210323 09:55:13.626" endtime="20210323 09:55:13.629"></status>
+</kw>
+<status status="PASS" starttime="20210323 09:55:09.363" endtime="20210323 09:55:13.629"></status>
+</kw>
+<status status="PASS" starttime="20210323 09:55:09.363" endtime="20210323 09:55:13.630"></status>
+</kw>
+<test id="s1-s1-t1" name="Should be able to add a product to and then delete it from my wishlist">
+<kw name="Given I am on the WestwingNow home page" library="Common">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"I am on the WestwingNow home page"</arg>
+</arguments>
+<msg timestamp="20210323 09:55:13.633" level="INFO">"I am on the WestwingNow home page"</msg>
+<status status="PASS" starttime="20210323 09:55:13.633" endtime="20210323 09:55:13.633"></status>
+</kw>
+<status status="PASS" starttime="20210323 09:55:13.632" endtime="20210323 09:55:13.633"></status>
+</kw>
+<kw name="When I search for &quot;möbel&quot;">
+<msg timestamp="20210323 09:55:13.639" level="FAIL">No keyword with name 'When I search for "möbel"' found.</msg>
+<status status="FAIL" starttime="20210323 09:55:13.639" endtime="20210323 09:55:13.639"></status>
+</kw>
+<doc>We would like to know whether an authenticated user can add an item to their wishlist and then delete it. For this we need a registered user on the website. We also will verify that the wishlist counter shows exactly 1. Once we're done with the scenario, we will log out in order to decouple the test from other possible tests and from future runs of the same test.</doc>
+<tags>
+<tag>Gherkin</tag>
+</tags>
+<status status="FAIL" starttime="20210323 09:55:13.630" endtime="20210323 09:55:13.639" critical="yes">No keyword with name 'When I search for "möbel"' found.</status>
+</test>
+<kw name="Finish Suite" library="Common" type="teardown">
+<doc>Closes the browser</doc>
+<kw name="CommonWeb.Close Browser">
+<msg timestamp="20210323 09:55:13.645" level="FAIL">No keyword with name 'CommonWeb.Close Browser' found.</msg>
+<status status="FAIL" starttime="20210323 09:55:13.644" endtime="20210323 09:55:13.645"></status>
+</kw>
+<status status="FAIL" starttime="20210323 09:55:13.640" endtime="20210323 09:55:13.645">No keyword with name 'CommonWeb.Close Browser' found.</status>
+</kw>
+<doc>This suite contains a Gherkin scenario for a provided test case on Westwing.de</doc>
+<status status="FAIL" starttime="20210323 09:55:09.253" endtime="20210323 09:55:13.646">Suite teardown failed:
+No keyword with name 'CommonWeb.Close Browser' found.</status>
+</suite>
+<status status="FAIL" starttime="20210323 09:55:09.237" endtime="20210323 09:55:13.649"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">Gherkin</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Task2">Tests.Task2</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210323 09:55:09.255" level="WARN">Imported resource file '/robot_project/Resources/Objects/HomePage.robot' is empty.</msg>
+<msg timestamp="20210323 09:55:09.362" level="ERROR">Error in file '/robot_project/Resources/Objects/CommonWeb.robot' on line 3: Resource file '../../Config/config.robot' does not exist.</msg>
+</errors>
+</robot>

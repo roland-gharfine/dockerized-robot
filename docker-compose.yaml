@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  test:
+    build:
+      context: .
+      network: host
+    volumes:
+      - .:/robot_project
+    stdin_open: true
+    tty: true
+    privileged: true
