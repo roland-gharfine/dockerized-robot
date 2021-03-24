@@ -70,18 +70,15 @@ in the Results directory.
   ```
 
 
-## Debugging
+## Documentation
 
-1. If you page up `(ctrl + fn)` within the debug output when running `pytest -vvl` or
-when encountering test errors, your cursor may stick and be unable to continue 
-writing in the docker shell. You can get past this by typing `q` to return to
-entry mode in the docker container.
+1. You can find keyword documentation for the current robot code in the Documentation directory.
+This includes documentation for the high-level keywords used in Common.robot and Scenario.robot, as well as
+docmentation for the keywords used in the Page Object files.
 
 
-1. If you'd like to debug a piece of code, you can add either of the following built-in functions
-   to a section of the code to enter into the pdb debugger while running pytest. 
-   * `breakpoint()` (python 3)
-   * `import pdb; pdb.set_trace()` (python 2)
+1. If you'd like to regenerate the documentation, you can run the below command: 
+   * `python  -m robot.libdoc  --format html  path\to\Resource_or_Library  path\to\output_file.html` 
 
 ## Additional Practice
 
