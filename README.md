@@ -15,6 +15,29 @@
   - The tests make use of Robot Framework and its Selenium Library extension.
 
 
+
+**Run Setup script**
+
+- You will be asked at the first run to provide a test account (email and password). These will be saved in a Sensitive.robot file which will never be pushed to github. Alternatively, feel free to edit your own Sensitive.robot file in the below format and save it in the Config directory (You will only be asked to enter credentials if the file doesn't exist). The file is in the below format:
+
+
+  ```bash
+  $ chmod +x setup.sh
+  $ ./setup.sh
+  ```
+
+
+  Or
+
+  ```bash
+
+  *** Variables ***
+  @{TEST} =  email@example.com  some-password
+  ```
+
+
+
+
 ## Usage
 
 *To run without user intervention*
@@ -30,13 +53,7 @@
 - This will run the run-tests.sh script which in turn will do the work for you by starting the X server and then running the tests and saving the timestamped results
 in the Results directory.
 
-- You will be asked at the first run to provide a test account (email and password). These will be saved in a Sensitive.robot file which will never be pushed to github. Alternatively, feel free to edit your own Sensitive.robot file in the below format and save it in the Config directory (You will only be asked to enter credentials if the file doesn't exist). The file is in the below format:
 
-  ```bash
-
-  *** Variables ***
-  @{TEST} =  email@example.com  some-password
-  ```
 
 
 
